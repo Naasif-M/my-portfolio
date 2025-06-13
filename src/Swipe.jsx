@@ -65,8 +65,9 @@ const Swipe = () => {
           {navItems.map((item, i) => (
             <div
               key={i}
-              className="flex flex-row gap-3 active:text-custom-pink"
+              className="flex flex-row items-center gap-3 active:text-custom-pink"
             >
+              {item.icon}
               <a href={item.href} onClick={() => setOpen(false)}>
                 {item.name}
               </a>
