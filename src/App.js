@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Home from "./Home";
 
-function App() {
+export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeout(() => setLoading(false), 900); // Wait for fade out to finish
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        className="bg-black h-screen flex justify-center items-center 
+           "
+      >
+        <span className="font-poppins font-semibold text-3xl text-custom-pink animate-fadeBlink tracking-wide ">
+          portfolio
+        </span>
+      </div>
+    );
+  }
+
+  // Your actual website
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <html className="scroll-smooth">
+      <Home />
+    </html>
   );
 }
-
-export default App;
