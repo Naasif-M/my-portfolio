@@ -132,7 +132,7 @@ const About = () => {
         <div className="lg:flex lg:flex-row lg:gap-8 lg:items-center lg:justify-center lg:mx-[50%]  lg:mb-[5%]">
           <div className="lg:mx-0  mx-6 ">
             <a
-              href="#about"
+              href="#contact"
               className="  lg:px-[110px] lg:font-bold whitespace-nowrap font-extrabold text-center block px-7 py-4 border-[3px] border-black text-sm font-poppins font-medium text-black tracking-widest hover:text-custom-pink hover:border-custom-pink    tracking-[0.2rem]"
             >
               HIRE ME
