@@ -25,9 +25,5 @@ export default function App() {
   }
 
   // Your actual website
-  return (
-    <html className="scroll-smooth">
-      <Home />
-    </html>
-  );
+  return <Home />;
 }
