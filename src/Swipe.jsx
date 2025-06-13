@@ -49,7 +49,7 @@ const Swipe = () => {
           </a>
         ))}
       </nav>
-      <span className="fixed top-7 brightness-[120%] left-[10%] z-50 font-barcode font-semibold text-3xl text-custom-pink  tracking-wide">
+      <span className=" hidden lg:block fixed top-7 brightness-[120%] left-[10%] z-50 font-barcode font-semibold text-3xl text-custom-pink  tracking-wide">
         portfolio
       </span>
 
