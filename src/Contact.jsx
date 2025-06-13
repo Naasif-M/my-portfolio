@@ -92,8 +92,8 @@ const Contact = () => {
       </div>
       <div className="lg:flex lg:flex-row-reverse lg:justify-center lg:gap-24">
         <div className="flex gap-5 items-center  justify-center  text-white text-2xl">
-          <AiFillInstagram className="hover:text-custom-pink" />
-          <IoLogoGithub className="hover:text-custom-pink" />
+          <AiFillInstagram className="hover:text-custom-pink hover:cursor-pointer" />
+          <IoLogoGithub className="hover:text-custom-pink hover:cursor-pointer" />
         </div>
         <footer>
           <div className="lg:flex lg:flex-row lg:items-center lg:space-x-4">

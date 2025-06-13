@@ -43,7 +43,7 @@ const Swipe = () => {
           <a
             key={i}
             href={item.href}
-            className="flex items-center gap-2 text-gray-800 font-poppins font-semibold hover:text-custom-pink transition"
+            className="flex items-center gap-2 text-gray-800 font-poppins font-semibold hover:text-custom-pink hover:scale-110 transition"
           >
             {item.name}
           </a>
